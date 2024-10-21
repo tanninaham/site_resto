@@ -3,36 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site</title>
+    <title>Menu déroulant</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#services">Services</a>
+                    <ul class="submenu">
+                        <li><a href="#service1">Service 1</a></li>
+                        <li><a href="#service2">Service 2</a></li>
+                        <li><a href="#service3">Service 3</a></li>
+                    </ul>
+                </li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <h1>Bienvenue sur mon site</h1>
     </header>
+    
     <main>
         <section id="accueil">
             <h2>Accueil</h2>
-            <p>Ceci est une page d'accueil simple et réactive.</p>
+            <p>Bienvenue sur notre site !</p>
         </section>
         <section id="services">
             <h2>Nos services</h2>
-            <p>Liste de vos services ici.</p>
+            <p>Découvrez nos services proposés.</p>
         </section>
         <section id="contact">
             <h2>Contactez-nous</h2>
-            <p>Information de contact ici.</p>
+            <p>Informations de contact ici.</p>
         </section>
     </main>
+    
     <footer>
         <p>&copy; 2024 Mon Site</p>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
